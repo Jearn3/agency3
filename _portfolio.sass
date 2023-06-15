@@ -44,20 +44,36 @@
                 color: #6c757d
                 font-size: 16px
         .yellowhover
-            i
-                color: #ffff
-                font-size: 4em
             position: absolute
             top: 0
             left: 0
-            padding: 149px 205px
+            padding: 157.5px 210px
             height: auto
             z-index: 1
             background-color: rgb(255 200 0)
+            opacity: 0
+            transition: opacity 0.3s ease
+            &:hover
+                opacity: 0.8
+        .icon
+            position: absolute
+            z-index: 2
+            top: 0
+            left: 0
+            padding: 131.5px 188px
+            height: auto
+            color: #ffff
+            font-size: 50px
+            opacity: 1
+            &:hover
+                    opacity: 0
+        .icon:hover .yellowhover
+            opacity: 1
+                
         .imgbox
             position: relative
             img
-                width: 420px
+                width: 100%
             
         
 

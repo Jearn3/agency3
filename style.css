@@ -182,20 +182,38 @@ header .textbox .btn {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 149px 205px;
+  padding: 157.5px 210px;
   height: auto;
   z-index: 1;
   background-color: rgb(255, 200, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-#portfolio .box .yellowhover i {
+#portfolio .box .yellowhover:hover {
+  opacity: 0.8;
+}
+#portfolio .box .icon {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 131.5px 188px;
+  height: auto;
   color: white;
-  font-size: 4em;
+  font-size: 50px;
+  opacity: 1;
+}
+#portfolio .box .icon:hover {
+  opacity: 0;
+}
+#portfolio .box .icon:hover .yellowhover {
+  opacity: 1;
 }
 #portfolio .box .imgbox {
   position: relative;
 }
 #portfolio .box .imgbox img {
-  width: 420px;
+  width: 100%;
 }
 
 #about {
